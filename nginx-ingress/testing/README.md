@@ -1,4 +1,4 @@
-### Simple hands-on guide:
+# Simple hands-on guide:
 ## Task Overview:  
 - The objective is to access a URL with your preferred name included as a path segment, as illustrated in the provided screenshot below. This task demonstrates the functionality of the NGINX Ingress Controller deployed in a Kubernetes environment to achieve this.
 
@@ -89,7 +89,7 @@ kubectl get ingressclass
 kubectl delete ingressclass <ingressclass-name>
 ```
 
-**Step 6:**Create an Ingress manifest file.  
+**Step 6:** Create an Ingress manifest file.  
 - An Ingress is a resource that is designed to facilitate the inbound traffic into your Kubernetes cluster.
 - Make sure that ingressClassName is specified correctly as given in the previous step(5).
 - This is a namespace-level resource.
@@ -126,4 +126,4 @@ helm uninstall <release-name>
 
 ## Architecture Diagram:
 
-![screenshot](https://github.com/saimanasak/kubernetes/blob/main/nginx-ingress/images/NGINX-Ingress Controller Architecture.png)  
+![screenshot](https://github.com/saimanasak/kubernetes/blob/main/nginx-ingress/images/NGINX-Ingress-Controller-Architecture.png)  
