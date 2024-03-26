@@ -1,0 +1,22 @@
+apiVersion: apps/v1                                   # K8s API version
+kind: Deployment                                      # Specifies type of resource, here it is Deployment
+metadata:                                             # Contains metadata about the deployment
+  name: dynamic-deploy                                # Name of the deployment
+  namespace: dynamic                                  # Namespace where the deploy should be created
+  labels:                                             # Key-value pairs that are attached to objects
+    app: dynamic-application                          # Label applied to the deployment
+spec:                                                 # Specifies desired state of deploy 
+  replicas: 1                                         # No.of replicas i.e., pods to be created
+  selector:                                           # Defines how pods are seleted
+    matchLabels:
+      app: dynamic-application                        # Here pods are selected based on app: dynamic-application
+  template:                                           # Pod configuration
+    metadata:
+      labels:
+        app: dynamic-application                      # Labels applied to pods created by this deployment
+    spec:                                             # Specification of container
+      containers:
+      - name: dynamic-webpage                         # Container name
+        image: saimanasak/dynamic-webpage:v1.0.0      # Docker image used to create the container
+        ports:
+        - containerPort: 80                           # Port to expose on the container
