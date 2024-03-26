@@ -1,13 +1,13 @@
-apiVersion: v1
-kind: Service
-metadata:
-  name: dynamic-service
-  namespace: dynamic
-spec:
-  selector:
-    app: dynamic-application
-  ports:
-  - protocol: TCP
-    port: 80
-    targetPort: 80
-  type: ClusterIP
+apiVersion: v1                           # K8s API version
+kind: Service                            # Specifies type of resource, here it is a Service
+metadata:                                # Metadata about the service
+  name: dynamic-service                  # Name of the service
+  namespace: dynamic                     # Namespace where the service should be created
+spec:                                    # Specifies the desired state of the service
+  selector:                              # Selects the pods that the service will route traffic to
+    app: dynamic-application             # Matches pods with label "app: dynamic-application"
+  ports:                                 # List of ports that the service should expose
+  - protocol: TCP                        # Specifies the protocol (TCP) for the port
+    port: 80                             # Port number exposed by the service
+    targetPort: 80                       # Port on the pods to which traffic will be routed/forwarded
+  type: ClusterIP                        # Specifies the type of service (ClusterIP)
