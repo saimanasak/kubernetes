@@ -8,6 +8,7 @@
 - A Dockerfile is a blueprint for creating a Docker image.
 - This Dockerfile creates an image with Nginx installed and configured to serve static web content.
 - A container created from this image will automatically start the Nginx web server and listen for incoming connections on port 80.
+- [Dockerfile](https://github.com/saimanasak/kubernetes/tree/main/nginx-ingress/dockerfiles)  
 - Commands to be run after creating the Dockerfile:
 ```
 # Command to build an image from the Dockerfile
