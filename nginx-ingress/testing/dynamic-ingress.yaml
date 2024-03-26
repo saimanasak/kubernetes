@@ -1,22 +1,22 @@
-apiVersion: networking.k8s.io/v1
-kind: Ingress
-metadata:
-  name: dynamic-ingress
-  namespace: dynamic
-  labels:
-    app: dynamic-application
-  annotations:
-    #nginx.ingress.kubernetes.io/add-base-url: "true"
-    nginx.ingress.kubernetes.io/rewrite-target: /$1
-spec:
-  ingressClassName: nginx
-  rules:
-  - http:
-      paths:
-      - path: /
-        pathType: Prefix
-        backend:
-          service:
-            name: dynamic-service
-            port:
-              number: 80
+apiVersion: networking.k8s.io/v1                      # K8s API version for Ingress resources
+kind: Ingress                                         # Specifies the type of resource, here it is an Ingress
+metadata:                                             # Metadata about the Ingress
+  name: dynamic-ingress                               # Name of the Ingress
+  namespace: dynamic                                  # Namespace where the Ingress should be created
+  labels:                                             # Labels applied to the Ingress
+    app: dynamic-application                          # Label identifying the application associated with the Ingress
+  annotations:                                        # Annotations for additional configuration
+    #nginx.ingress.kubernetes.io/add-base-url: "true" # Annotation to add a base URL 
+    nginx.ingress.kubernetes.io/rewrite-target: /$1   # Annotation to rewrite the URL path
+spec:                                                 # Specifies the desired state of the Ingress
+  ingressClassName: nginx                             # Specifies the class name of the Ingress controller to use
+  rules:                                              # List of routing rules for incoming traffic
+  - http:                                             # Specifies that the rule applies to HTTP traffic
+      paths:                                          # List of paths and their associated backend services
+      - path: /                                       # Path for incoming requests (root path)
+        pathType: Prefix                              # Specifies that the path is a prefix match
+        backend:                                      # Specifies the backend service for routing
+          service:                                    # Specifies the backend service
+            name: dynamic-service                     # Name of the backend Service
+            port:                                     # Port configuration for the backend Service
+              number: 80                              # Port number on which the backend Service is listening
