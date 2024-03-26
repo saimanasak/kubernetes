@@ -8,6 +8,7 @@ LABEL maintainer="Sai Manasa"
 RUN  apt-get -y update && apt-get -y install nginx
 
 #copies from the build context to directory within container
+COPY default /etc/nginx/sites-available/default
 COPY index.html /usr/share/nginx/html/
 
 #container will listen on port 80 at runtime
