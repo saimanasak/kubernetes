@@ -1,6 +1,6 @@
-apiVersion: networking.k8s.io/v1
-kind: IngressClass
-metadata:
-  name: nginx
-spec:
-  controller: nginx.org/ingress-controller
+apiVersion: networking.k8s.io/v1            # K8s API version for IngressClass resources
+kind: IngressClass                          # Specifies the type of resource, here it is an IngressClass
+metadata:                                   # Metadata about the IngressClass
+  name: nginx                               # Name of the IngressClass
+spec:                                       # Specifies the desired state of the IngressClass
+  controller: nginx.org/ingress-controller  # Specifies the controller that implements this IngressClass
