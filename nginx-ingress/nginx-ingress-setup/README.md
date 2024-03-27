@@ -27,7 +27,17 @@
         ```
         helm uninstall <release-name>
         ```
+        - Verify the installation using: `kubectl get svc -A`  
     - There are many other ways to install the controller: [NGINX Ingress Controller using Helm](https://docs.nginx.com/nginx-ingress-controller/installation/installing-nic/installation-with-helm/)  
     
-2. **Using Manifests**:  
+2. **Using Manifests**:   
+    - Download the manifest from the official GitHub repo of NGINX Ingress: [Manifest](https://github.com/nginxinc/kubernetes-ingress/tree/main)  
+    - This is the path for the controller file: kubernetes-ingress(repo) --> deployments --> deployment   
+    - Customize the configuration (optional)  
+    - Apply the manifests: `kubectl apply -f <manifest-file-name>`  
+    - There are many other ways to install the controller: [NGINX Ingress Controller using Manifests](https://docs.nginx.com/nginx-ingress-controller/installation/installing-nic/installation-with-manifests/)  
     
+3. **Using NGINX Ingress Operator**:  
+    - Install the operator: [Manual Installation](https://github.com/nginxinc/nginx-ingress-helm-operator/blob/main/docs/manual-installation.md)  
+    - Configure the operator with any custom settings or parameters required for your environment.  
+    - Apply the manifests: `kubectl apply -f <file-name>`  
