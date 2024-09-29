@@ -1,0 +1,2 @@
+- [**rc-nginx.yaml**](https://github.com/saimanasak/kubernetes/blob/main/replication-controller/basic-rc-nginx/rc-nginx.yaml): This file outlines the configuration for the replication controller.
+- [**rc-nginx.md**](https://github.com/saimanasak/kubernetes/blob/main/replication-controller/basic-rc-nginx/rc-nginx.md): This document offers a comprehensive overview of the configuration file, detailed code explanation, the process of creating the rc, how to retrieve rc details, and the procedure for deleting the pod and rc.
