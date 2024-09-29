@@ -55,6 +55,7 @@ spec:
 ### Create Pod:
 - Syntax to create the pod using the manifest:
 ```bash
+kubectl create -f manifest_name
 kubectl apply -f manifest_name
 ```
 
