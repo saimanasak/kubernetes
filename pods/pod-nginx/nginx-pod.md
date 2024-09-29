@@ -1,4 +1,4 @@
-```yaml filename="nginx-pod.yaml"
+```yaml:nginx-pod.yaml 
 apiVersion: v1
 kind: Pod
 metadata:
