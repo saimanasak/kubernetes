@@ -1,0 +1,2 @@
+- [**rs-nginx.yaml**](https://github.com/saimanasak/kubernetes/blob/main/replicasets/basic-rs-nginx/rs-nginx.yaml): This file outlines the configuration for the replicaset.
+- [**rs-nginx.md**](https://github.com/saimanasak/kubernetes/blob/main/replicasets/basic-rs-nginx/rs-nginx.md): This document offers a comprehensive overview of the configuration file, detailed code explanation, the process of creating the rs, how to retrieve rs details, and the procedure for deleting the pod and rs.
