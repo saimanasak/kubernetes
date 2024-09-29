@@ -58,7 +58,7 @@ spec:
 kubectl apply -f manifest_name
 ```
 
-![screenshot](https://github.com/saimanasak/kubernetes/blob/main/pods/pod-nginx/screenshots/create_pod.png)
+![screenshot](https://github.com/saimanasak/kubernetes/blob/main/pods/pod-nginx/images/create_pod.png)
 
 - Below command to create a pod using the above manifest file:
 ```bash
@@ -78,7 +78,7 @@ kubectl get pods -n namespace
 kubectl get pods -A
 ```
 
-![screenshot](https://github.com/saimanasak/kubernetes/blob/main/pods/pod-nginx/screenshots/get_pods.png)
+![screenshot](https://github.com/saimanasak/kubernetes/blob/main/pods/pod-nginx/images/get_pods.png)
 
 ### View Pod Details:
 - Syntax to view the pod details:
@@ -91,7 +91,7 @@ kubectl describe pod pod_name -n namespace
 kubectl describe pod my-nginx-pod
 ```
 
-![screenshot](https://github.com/saimanasak/kubernetes/blob/main/pods/pod-nginx/screenshots/describe_pod.png)
+![screenshot](https://github.com/saimanasak/kubernetes/blob/main/pods/pod-nginx/images/describe_pod.png)
 
 ### Delete Pod:
 - Syntax to delete the pod:
@@ -104,4 +104,4 @@ kubectl delete pod pod_name -n namespace
 kubectl delete pod my-nginx-pod
 ```
 
-![screenshot](https://github.com/saimanasak/kubernetes/blob/main/pods/pod-nginx/screenshots/delete_pod.png)
+![screenshot](https://github.com/saimanasak/kubernetes/blob/main/pods/pod-nginx/images/delete_pod.png)
