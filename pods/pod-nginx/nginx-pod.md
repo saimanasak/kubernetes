@@ -1,4 +1,4 @@
-```yaml:nginx-pod.yaml 
+```yaml {title="nginx-pod.yaml"}
 apiVersion: v1
 kind: Pod
 metadata:
