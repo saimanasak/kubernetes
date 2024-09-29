@@ -1,2 +1,0 @@
-- **nginx-pod.yaml**: This file outlines the configuration for the pod.
-- **nginx-pod.md**: This document offers a comprehensive overview of the pod configuration file, detailed code explanation, the process of creating the pod, how to retrieve pod details, and the procedure for deleting the pod.
