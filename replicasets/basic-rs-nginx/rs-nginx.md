@@ -1,4 +1,6 @@
 ```yaml
+# rs-nginx.yaml
+
 apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
