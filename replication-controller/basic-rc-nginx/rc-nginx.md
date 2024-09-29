@@ -79,7 +79,7 @@ kubectl apply -f manifest_name
 kubectl create -f rc-nginx.yaml
 ```
 
-![screenshot](https://github.com/saimanasak/kubernetes/blob/main/replication-controller/rc-nginx/images/create_rc.png)
+![screenshot](https://github.com/saimanasak/kubernetes/blob/main/replication-controller/basic-rc-nginx/images/create_rc.png)
 
 ### RC Verification:
 - Syntax to check the replication controller:
@@ -96,14 +96,14 @@ kubectl get rc -n namespace
 kubectl get rc
 ```
 
-![screenshot](https://github.com/saimanasak/kubernetes/blob/main/replication-controller/rc-nginx/images/get_rc.png)
+![screenshot](https://github.com/saimanasak/kubernetes/blob/main/replication-controller/basic-rc-nginx/images/get_rc.png)
 
 - Use the below command to verify the pods:
 ```bash
 kubectl get pods
 ```
 
-![screenshot](https://github.com/saimanasak/kubernetes/blob/main/replication-controller/rc-nginx/images/initial_get_pods.png)
+![screenshot](https://github.com/saimanasak/kubernetes/blob/main/replication-controller/basic-rc-nginx/images/initial_get_pods.png)
 
 ### View Replication Controller Details:
 - Syntax to view the details of a specific replication controller:
@@ -116,7 +116,7 @@ kubectl describe rc rc_name
 kubectl describe rc my-nginx-rc
 ```
 
-![screenshot](https://github.com/saimanasak/kubernetes/blob/main/replication-controller/rc-nginx/images/describe_rc.png)
+![screenshot](https://github.com/saimanasak/kubernetes/blob/main/replication-controller/basic-rc-nginx/images/describe_rc.png)
 
 ### Deleting Pod & Verify:
 - Use the below command to delete the pod:
@@ -124,14 +124,14 @@ kubectl describe rc my-nginx-rc
 kubectl delete pod 
 ```
 
-![screenshot](https://github.com/saimanasak/kubernetes/blob/main/replication-controller/rc-nginx/images/delete_pod.png)
+![screenshot](https://github.com/saimanasak/kubernetes/blob/main/replication-controller/basic-rc-nginx/images/delete_pod.png)
 
 - Use the below command to verify the pods that again new pod is created or not:
 ```bash
 kubectl get pods
 ```
 
-![screenshot](https://github.com/saimanasak/kubernetes/blob/main/replication-controller/rc-nginx/images/new_get_pods.png)
+![screenshot](https://github.com/saimanasak/kubernetes/blob/main/replication-controller/basic-rc-nginx/images/new_get_pods.png)
 
 ### Delete Replication Controller:
 - Syntax to delete the replication controller:
@@ -144,7 +144,7 @@ kubectl delete rc rc_name
 kubectl delete rc my-nginx-rc
 ```
 
-![screenshot](https://github.com/saimanasak/kubernetes/blob/main/replication-controller/rc-nginx/images/delete_rc.png)
+![screenshot](https://github.com/saimanasak/kubernetes/blob/main/replication-controller/basic-rc-nginx/images/delete_rc.png)
 
 > NOTE:
 > 
