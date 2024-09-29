@@ -157,7 +157,7 @@ kubectl delete rs my-nginx-rs
 ### Scaling:
 - Various ways to scale:
 ```bash
-kubectl scale --replicas=5 -f replicaset_name
+kubectl scale --replicas=5 -f replicaset_manifest_filename
 
 kubectl scale --replicas=5 replicaset replicaset_name
 ```
