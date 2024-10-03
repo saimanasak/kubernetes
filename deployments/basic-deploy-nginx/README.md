@@ -1,0 +1,2 @@
+- [**deploy-pod.yaml**](https://github.com/saimanasak/kubernetes/blob/main/deployments/basic-deploy-nginx/deploy-nginx.yaml): This file outlines the configuration of the deployment and pod.
+- [**deploy-pod.md**](https://github.com/saimanasak/kubernetes/blob/main/deployments/basic-deploy-nginx/deploy-nginx.md): This document offers a comprehensive overview of the deployment configuration file, detailed code explanation, the process of creating the deployment and pod, how to retrieve deployment details, and the procedure for deleting the pod and deployment.
