@@ -89,7 +89,12 @@ kubectl get services
 ![screenshot](https://github.com/saimanasak/kubernetes/blob/main/services/nodeport/basic-nginx/images/get_all.png)
 
 ### Accessing NGINX:
-- Minikube provides a command to directly route traffic to the service and open it in your browser:
+- Generally, we can access the nginx using the below command:
+```bash
+http://<node-IP>:nodePort
+```
+
+- Here, Minikube provides a command to directly route traffic to the service and open it in your browser:
 ```bash
 minikube service service-name
 
