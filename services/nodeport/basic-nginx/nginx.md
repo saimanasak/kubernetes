@@ -72,7 +72,7 @@ spec:
 kubectl create -f nginx.yaml
 ```
 
-![screenshot](https://github.com/saimanasak/kubernetes/blob/main/replication-controller/basic-rc-nginx/images/create_rc.png)
+![screenshot](https://github.com/saimanasak/kubernetes/blob/main/services/nodeport/basic-nginx/images/create.png)
 
 ### Check Objects:
 - Check the status of the above created objects using:
@@ -86,7 +86,7 @@ kubectl get pods
 kubectl get services
 ```
 
-![screenshot](https://github.com/saimanasak/kubernetes/blob/main/replication-controller/basic-rc-nginx/images/get_all.png)
+![screenshot](https://github.com/saimanasak/kubernetes/blob/main/services/nodeport/basic-nginx/images/get_all.png)
 
 ### Accessing NGINX:
 - Minikube provides a command to directly route traffic to the service and open it in your browser:
@@ -96,9 +96,9 @@ minikube service service-name
 minikube service service-name --url
 ```
 
-![screenshot](https://github.com/saimanasak/kubernetes/blob/main/replication-controller/basic-rc-nginx/images/minikube-svc.png)
+![screenshot](https://github.com/saimanasak/kubernetes/blob/main/services/nodeport/basic-nginx/images/minikube-svc.png)
 
-![screenshot](https://github.com/saimanasak/kubernetes/blob/main/replication-controller/basic-rc-nginx/images/minikube-svc-url.png)
+![screenshot](https://github.com/saimanasak/kubernetes/blob/main/services/nodeport/basic-nginx/images/minikube-svc-url.png)
 
 - Commands to use, in this case:
 ```bash
@@ -107,4 +107,4 @@ minikube service my-service
 minikube service my-service --url
 ```
 
-![screenshot](https://github.com/saimanasak/kubernetes/blob/main/replication-controller/basic-rc-nginx/images/output-nginx.png)
+![screenshot](https://github.com/saimanasak/kubernetes/blob/main/services/nodeport/basic-nginx/images/output-nginx.png)
