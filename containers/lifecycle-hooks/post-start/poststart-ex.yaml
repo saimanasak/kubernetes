@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: poststart-example
+spec:
+  containers:
+    - name: nginx-container
+      image: nginx
+      ports:
+        - containerPort: 80
+      lifecycle:
+        postStart:
+          exec:
+            command: ["/bin/sh", "-c", "echo 'Nginx has started!!!' > /usr/share/nginx/html/poststart.txt"]
