@@ -118,3 +118,7 @@ kubectl describe pod prestop-example
 ```
 
 ![screenshot](https://github.com/saimanasak/kubernetes/blob/main/containers/lifecycle-hooks/images/describe-pod-after-pre-nginx.png)
+
+### Flow:
+
+![screenshot](https://github.com/saimanasak/kubernetes/blob/main/containers/lifecycle-hooks/images/prestop-nginx.png)

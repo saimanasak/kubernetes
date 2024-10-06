@@ -116,3 +116,7 @@ http://localhost:8080/poststart.txt
 ```
 
 ![screenshot](https://github.com/saimanasak/kubernetes/blob/main/containers/lifecycle-hooks/images/output-post-nginx.png)
+
+### Flow:
+
+![screenshot](https://github.com/saimanasak/kubernetes/blob/main/containers/lifecycle-hooks/images/poststart-nginx.png)
