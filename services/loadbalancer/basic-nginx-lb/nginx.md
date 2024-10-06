@@ -67,7 +67,7 @@ spec:
 kubectl create -f nginx.yaml
 ```
 
-![screenshot](https://github.com/saimanasak/kubernetes/blob/main/services/loadbalancer/basic-nginx/images/create.png)
+![screenshot](https://github.com/saimanasak/kubernetes/blob/main/services/loadbalancer/basic-nginx-lb/images/create.png)
 
 ### Check Objects:
 - Check the status of the above created objects using:
@@ -81,7 +81,7 @@ kubectl get pods
 kubectl get services
 ```
 
-![screenshot](https://github.com/saimanasak/kubernetes/blob/main/services/loadbalancer/basic-nginx/images/get-all.png)
+![screenshot](https://github.com/saimanasak/kubernetes/blob/main/services/loadbalancer/basic-nginx-lb/images/get-all.png)
 
 ### Accessing NGINX:
 - Generally, we can access the nginx with the external IP of the service using the below command:
@@ -94,7 +94,7 @@ http://<external-IP>
 minikube tunnel
 ```
 
-![screenshot](https://github.com/saimanasak/kubernetes/blob/main/services/loadbalancer/basic-nginx/images/tunnel.png)
+![screenshot](https://github.com/saimanasak/kubernetes/blob/main/services/loadbalancer/basic-nginx-lb/images/tunnel.png)
 
 - Commands to use, in this case:
 ```bash
@@ -103,4 +103,4 @@ minikube tunnel
 http://localhost
 ```
 
-![screenshot](https://github.com/saimanasak/kubernetes/blob/main/services/loadbalancer/basic-nginx/images/output-nginx.png)
+![screenshot](https://github.com/saimanasak/kubernetes/blob/main/services/loadbalancer/basic-nginx-lb/images/output-nginx.png)
