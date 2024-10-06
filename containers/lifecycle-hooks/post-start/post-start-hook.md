@@ -3,7 +3,7 @@
 - The PostStart hook is triggered immediately after the container is created but before the main application or command starts running.
 - This hook is typically used to run some initialization tasks after the container has started.
 
-### Example:
+### Example Overview:
 - We have an application running in a container that depends on some temporary files being created in the file system. 
 - You can use the PostStart hook to create those files as soon as the container starts.
 
@@ -25,6 +25,8 @@ spec:
           exec:
             command: ["/bin/sh", "-c", "echo 'Nginx has started!!!' > /usr/share/nginx/html/poststart.txt"]
 ```
+
+### Explanation:
 
 ```yaml
 apiVersion: v1
