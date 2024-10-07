@@ -85,7 +85,7 @@ kubectl create -f poststart-ex.yaml
 
 ![screenshot](https://github.com/saimanasak/kubernetes/blob/main/containers/lifecycle-hooks/images/create-post-nginx.png)
 
-### CHeck Pod Status:
+### Check Pod Status:
 - Command to check the status of the pod:
 ```bash
 kubectl get pods
