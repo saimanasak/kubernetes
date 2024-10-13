@@ -21,3 +21,8 @@
 - When we are deploying updates and want a smooth transition.
 - When application’s readiness depends on external services or connections.
 
+### Example:
+- Create a YAML manifest for an NGINX pod that includes a readiness probe to check if the server is ready to accept traffic.
+- Modify the NGINX server to simulate unavailability, and observe how Kubernetes marks the pod as not ready, preventing it from receiving traffic until it is restored.
+- [Manifest](https://github.com/saimanasak/kubernetes/blob/main/containers/probes/readiness/basic-nginx-example/basic-example.yaml)
+- [Explanation](https://github.com/saimanasak/kubernetes/blob/main/containers/probes/readiness/basic-nginx-example/basic-example.md)
