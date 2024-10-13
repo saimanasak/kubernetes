@@ -143,4 +143,4 @@ kubectl get pods
 kubectl delete pod liveness-pod
 ```
 
-![screenshot](https://github.com/saimanasak/kubernetes/blob/main/containers/probes/images/liveness-delete.png)
+![screenshot](https://github.com/saimanasak/kubernetes/blob/main/containers/probes/images/liveness-delete-pod.png)
