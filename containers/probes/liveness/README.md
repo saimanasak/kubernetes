@@ -23,5 +23,5 @@
 
 - A simple example of a liveness probe using an NGINX container in Kubernetes. 
 - Then configure the liveness probe to check an HTTP endpoint provided by NGINX, and then simulate a failure to observe how Kubernetes restarts the container.
-- [Manifest](https://github.com/saimanasak/kubernetes/blob/main/containers/probes/liveness/basic-example.yaml)
-- [Explanation](https://github.com/saimanasak/kubernetes/blob/main/containers/probes/liveness/basic-example.md)
+- [Manifest](https://github.com/saimanasak/kubernetes/blob/main/containers/probes/liveness/basic-nginx-example/basic-example.yaml)
+- [Explanation](https://github.com/saimanasak/kubernetes/blob/main/containers/probes/liveness/basic-nginx-example/basic-example.md)
