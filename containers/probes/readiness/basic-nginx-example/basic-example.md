@@ -141,6 +141,26 @@ kubectl get pods
 
 ![screenshot](https://github.com/saimanasak/kubernetes/blob/main/containers/probes/images/readiness-after-get-pods.png)
 
+### Resolve the failure:
+- Login to the pod's container:
+```bash
+kubectl exec -it readiness-pod -- sh
+```
+- Rename or delete the default HTML directory:
+```bash
+mv /usr/share/nginx/html-bak /usr/share/nginx/html
+```
+
+![screenshot](https://github.com/saimanasak/kubernetes/blob/main/containers/probes/images/readiness-resolve.png)
+
+### Observe Pod Details:
+- Check the pod status:
+```bash
+kubectl get pods
+```
+
+![screenshot](https://github.com/saimanasak/kubernetes/blob/main/containers/probes/images/readiness-resolve-pods.png)
+
 ### Delete Pod:
 - Using the below command delete the above pod:
 ```bash
