@@ -49,6 +49,8 @@ In this project we use:
 - Blog: [Deployment - Nginx App](https://saimanasak.medium.com/deployment-nginx-application-d59373e89ee3)
 - Manifest Files: [Deployment](nginx-deployment.yaml) and [Service](nginx-service.yaml)
 
+---
+
 ### Expected Outcome
 
 After completing this project:
@@ -57,16 +59,5 @@ After completing this project:
 - Pods should be managed by a **Deployment and ReplicaSet**
 - A **ClusterIP Service** should expose the application internally
 - The application should be accessible **from inside the Kubernetes cluster**
-
----
-
-### Learning Outcome
-
-By completing this project, you will understand:
-
-- How **Deployments manage Pods**
-- How **ReplicaSets maintain desired state**
-- How **Services expose applications**
-- How **Kubernetes handles scaling automatically**
 
 This project forms the **foundation for understanding Kubernetes application deployment**.
