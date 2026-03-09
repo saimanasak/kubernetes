@@ -46,8 +46,8 @@ In this project we use:
 
 ### Solution
 
-Blog: [Deployment - Nginx App]()
-Manifest Files: [Deployment]() and [Service]()
+- Blog: [Deployment - Nginx App](https://saimanasak.medium.com/deployment-nginx-application-d59373e89ee3)
+- Manifest Files: [Deployment](nginx-deployment.yaml) and [Service](nginx-service.yaml)
 
 ### Expected Outcome
 
