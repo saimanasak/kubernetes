@@ -1,0 +1,17 @@
+replicaCount: 3
+
+image:
+  repository: nginx
+  tag: latest
+  pullPolicy: IfNotPresent
+
+container:
+  name: nginx-container
+  port: 80
+
+service:
+  name: my-nginx-service
+  type: NodePort
+  port: 80
+  targetPort: 80
+  nodePort: 30007
