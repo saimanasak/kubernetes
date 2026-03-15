@@ -22,7 +22,7 @@ The goal of this repository is to learn Kubernetes by **building, experimenting,
 | # | Project | Description | Blog |
 |---|---|---|---|
 | 1 | **Nginx Deployment with ClusterIP Service** | Deploy an Nginx application using a Deployment and expose it internally with a ClusterIP Service. | [Read Blog](https://medium.com/@saimanasak/deployment-nginx-application-d59373e89ee3) |
-| 2 | **Helm Deployment of Nginx with NodePort Service** | Package the application using Helm charts and expose it externally using a NodePort Service. | [Read Blog]() |
+| 2 | **Helm Deployment of Nginx with NodePort Service** | Package the application using Helm charts and expose it externally using a NodePort Service. | [Read Blog](https://saimanasak.medium.com/helm-deployment-of-an-nginx-application-using-a-nodeport-service-in-kubernetes-a7547c31ef5b) |
 
 ---
 

@@ -64,7 +64,7 @@ In this project we use:
 
 ### Solution
 
-- Blog: [Helm Deployment of Nginx using NodePort Service]()
+- Blog: [Helm Deployment of Nginx using NodePort Service](https://saimanasak.medium.com/helm-deployment-of-an-nginx-application-using-a-nodeport-service-in-kubernetes-a7547c31ef5b)
 - Helm Chart: [`nginx-nodeport-chart`](https://github.com/saimanasak/kubernetes/tree/main/battlefield/2-simple-nodeport-nginx-helm/helm-charts/nginx-nodeport-chart)
 
 ---
