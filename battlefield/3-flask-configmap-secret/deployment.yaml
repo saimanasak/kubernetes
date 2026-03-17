@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-flask-deploy
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: flask-config
+  template:
+    metadata:
+      labels:
+        app: flask-config
+    spec:
+      containers:
+      - name: flask-container
+        image: saimanasak/flask-k8s-cm-secrets-demo:v1
+        ports:
+        - containerPort: 5000
+
+        envFrom:
+        - configMapRef:
+            name: my-flask-config
+        - secretRef:
+            name: my-flask-secret
