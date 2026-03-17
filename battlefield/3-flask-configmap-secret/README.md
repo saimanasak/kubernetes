@@ -86,8 +86,8 @@ In this project we use:
 
 ### Solution
 
-- Blog: *Deploying a Flask Application using ConfigMaps and Secrets in Kubernetes*
-- [Manifests]()
+- Blog: [*Deploying a Flask Application using ConfigMaps and Secrets in Kubernetes*](https://saimanasak.medium.com/deploying-a-flask-application-using-configmaps-and-secrets-in-kubernetes-c0ac46ffedca)
+- [Manifests](https://github.com/saimanasak/kubernetes/tree/main/battlefield/3-flask-configmap-secret)
 
 ---
 
